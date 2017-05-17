@@ -9,6 +9,21 @@ https://developers.google.com/protocol-buffers/
 
 Overview
 --------
+编译环境loongson3A3000
+arch   mips64el
+os     fedora21
+
+build:
+1.$ ./autogen.sh
+2.$ ./configure
+3.$ make
+4.$ make install
+5.最后会在src下生成protoc二进制文件
+6.$ cd src
+7.$ln ./protoc /usr/bin/protoc
+
+验证：
+$protoc --version
 
 Protocol Buffers (a.k.a., protobuf) are Google's language-neutral,
 platform-neutral, extensible mechanism for serializing structured data. You
